@@ -30,8 +30,8 @@ const deleteCaches = async () => {
   await Promise.all(filteredKeys.map(deleteOldCache));
 };
 
-self.addEventListener("active", (event) => {
-  event.waitIntil(deleteCaches);
+self.addEventListener("activate", (event) => {
+  event.waitIntil(deleteCaches());
 });
 
 self.addEventListener("install", (event) => {
