@@ -37,6 +37,7 @@ function App() {
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
       <p>Hold on a minute</p>
+      <p>Testing extra text</p>
     </div>
   );
 }
